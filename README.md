@@ -2,7 +2,9 @@
 
 [![Build and Run](https://github.com/val-exx/logic-circuit-analyzer-simulator/actions/workflows/build-and-run.yml/badge.svg)](https://github.com/val-exx/logic-circuit-analyzer-simulator/actions/workflows/build-and-run.yml)
 
-C++ project originally developed for an Algorithms and Computer Architecture course.
+C++ project originally developed in 2017 for an Algorithms and Computer Architecture course.
+
+This is a historical university project that has been preserved in its original C++/Visual Studio form and later modernized with a GitHub Actions continuous integration workflow.
 
 The original assignment was not available in the project folder. The description below was reconstructed from the source code and the included example files.
 
@@ -214,4 +216,4 @@ then choose `3` and enter `percorso_file`.
 
 ## Notes
 
-This is a historical university project and keeps its original Visual Studio 2017 (`v141`) structure. The folder has been cleaned from build artifacts to make it suitable for upload to GitHub.
+This is a historical university project from 2017 and keeps its original Visual Studio 2017 (`v141`) structure. The repository has been cleaned from build artifacts and modernized with GitHub Actions, so the project is automatically compiled and executed on Ubuntu on every push to `main`.
