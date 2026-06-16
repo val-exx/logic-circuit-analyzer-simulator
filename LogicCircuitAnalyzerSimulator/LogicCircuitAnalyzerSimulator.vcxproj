@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{2DBB7621-D0EB-42EB-9025-E8A285E1A080}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>PROGET</RootNamespace>
+    <RootNamespace>LogicCircuitAnalyzerSimulator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -104,10 +104,12 @@
       </Command>
     </CustomBuildStep>
     <PreBuildEvent>
-      <Command>PROGET Circuito_Sequenziale.txt</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreLinkEvent>
-      <Command>PROGET Circuito_Sequenziale.txt</Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -172,7 +174,7 @@
     <ClCompile Include="Circuito_Sequenziale.cpp" />
     <ClCompile Include="Controlli.cpp" />
     <ClCompile Include="Porta_logica.cpp" />
-    <ClCompile Include="PROGET.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Simulazione.cpp" />
     <ClCompile Include="Sotto_albero.cpp" />
   </ItemGroup>

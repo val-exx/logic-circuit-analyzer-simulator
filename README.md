@@ -31,7 +31,7 @@ The program supports combinational circuits, sequential circuits with flip-flops
 
 ## Key Concepts and Skills
 
-This project highlights skills relevant to software engineering, embedded systems, EDA, digital systems, and C++ development roles.
+This project highlights skills relevant to software engineering, embedded systems, electronic design automation (EDA), digital systems, and C++ development roles.
 
 ### Core Concepts
 
@@ -47,7 +47,7 @@ This project highlights skills relevant to software engineering, embedded system
 ### Technical Skills Demonstrated
 
 - C++ programming with classes, structs, pointers, `vector`, iterators, and file streams.
-- Object-oriented design with dedicated classes for parsing, simulation, analysis, circuits, and logic gates.
+- Object-oriented design with dedicated classes for circuit construction, simulation, analysis, composition, and logic gates.
 - Manual management of dynamic data structures through nodes and pointers.
 - Implementation of tree traversal and analysis algorithms.
 - Modeling of combinational and sequential logic gates.
@@ -64,8 +64,8 @@ University C++ project implementing a simulator and analyzer for logic circuits 
 
 ```text
 .
-|-- PROGET.sln                  # Visual Studio solution
-|-- PROGET/
+|-- LogicCircuitAnalyzerSimulator.sln
+|-- LogicCircuitAnalyzerSimulator/
 |   |-- *.cpp, *.h              # C++ source code
 |   |-- Circuito_*.txt          # Example circuits
 |   |-- Combinatorio_*.txt      # Test/error cases for combinational circuits
@@ -142,14 +142,14 @@ The project was originally built as a Visual Studio console application.
 
 ### With Visual Studio
 
-1. Open `PROGET.sln`.
+1. Open `LogicCircuitAnalyzerSimulator.sln`.
 2. Build the desired configuration.
 3. Run the executable by passing a circuit file as argument.
 
-Example from the terminal, running from the `PROGET` folder:
+Example from the terminal, running from the `LogicCircuitAnalyzerSimulator` folder:
 
 ```powershell
-..\Debug\PROGET.exe Circuito_Combinatorio.txt
+..\Debug\LogicCircuitAnalyzerSimulator.exe Circuito_Combinatorio.txt
 ```
 
 ### Program Flow
@@ -182,7 +182,7 @@ For analysis, the program directly prints the minimum path, maximum path, logica
 For library mode, first run the module to be inserted, then provide a file containing the path to the main/composite circuit. With the included examples:
 
 ```powershell
-..\Debug\PROGET.exe Combinatorio_per_composito.txt
+..\Debug\LogicCircuitAnalyzerSimulator.exe Combinatorio_per_composito.txt
 ```
 
 then choose `3` and enter `percorso_file`.
