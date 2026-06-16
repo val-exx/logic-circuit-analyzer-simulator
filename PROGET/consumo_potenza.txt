@@ -1,0 +1,9 @@
+Consumo potenza operatori
+FF;0.5;0.25 
+NOT;0.1;0.34
+OR;0.2;0.56
+NAND;0.11;0.66
+XOR;0.69;0.99
+NOR;0.01;0.09
+XNOR;0.71;0.33
+AND;0.39;0.67

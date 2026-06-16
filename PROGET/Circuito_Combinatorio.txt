@@ -1,0 +1,7 @@
+module NOME_CIRCUITO_COMB (
+input a[3]
+output x[2]
+);
+assign x[0] = a[2] OR (a[0] AND a[1])
+assign x[1] = NOT a[2]
+endmodule

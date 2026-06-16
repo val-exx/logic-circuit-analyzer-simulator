@@ -1,0 +1,39 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+Win32/
+bin/
+obj/
+
+# C/C++ intermediate files
+*.obj
+*.o
+*.ilk
+*.pdb
+*.idb
+*.ipch
+*.pch
+*.tlog
+*.log
+*.lastbuildstate
+
+# Executables and libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

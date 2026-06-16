@@ -1,0 +1,6 @@
+module combinatorio2 (
+input a, b
+output x
+);
+assign x = NOT (a NOR b)
+endmodule

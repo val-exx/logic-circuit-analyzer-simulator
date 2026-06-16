@@ -1,0 +1,7 @@
+module combinatorio_feedback (
+input input1, input2
+input input3
+output x
+);
+assign x = (input1 OR input2) NAND (input3 XOR x)
+endmodule

@@ -1,0 +1,7 @@
+module combinatorio1 (
+input a, b
+input c, d
+output x
+);
+assign x = (a NAND b) OR (c XOR d)
+endmodule

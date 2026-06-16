@@ -1,0 +1,10 @@
+module composito (
+clk
+input input1, input2
+input input3, input4
+output output1
+);
+Combinatorio_per_composito instance (.a = input1, .b = input2, .c = input3, .x = FF1)
+FF2 = FF1 XOR (NOT input4)
+assign output1 = FF1 NAND FF2
+endmodule

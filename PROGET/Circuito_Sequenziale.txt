@@ -1,0 +1,10 @@
+module circuito (
+clk
+input a[2]
+input c
+output x
+);
+FF1 = a[0] XOR a[1]
+FF2 = FF1 XNOR (NOT c)
+assign x = FF1 NAND FF2
+endmodule

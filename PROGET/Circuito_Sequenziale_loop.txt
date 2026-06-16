@@ -1,0 +1,10 @@
+module circuito (
+clk
+input a, b
+input c
+output x
+);
+FF1 = FF2 AND b
+FF2 = a OR (NOT c)
+assign x = FF1 OR FF2
+endmodule

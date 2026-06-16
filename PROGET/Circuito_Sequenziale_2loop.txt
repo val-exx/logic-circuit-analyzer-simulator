@@ -1,0 +1,12 @@
+module sequenziale2 (
+clk
+input a, b
+input c, d
+output y
+);
+FF2 = FF1 AND b
+FF1 = a OR (NOT c)
+FF3 = FF4 XOR (d AND a)
+FF4 = a XNOR d
+assign y = (FF1 OR FF2) AND (FF3 NAND FF4)
+endmodule

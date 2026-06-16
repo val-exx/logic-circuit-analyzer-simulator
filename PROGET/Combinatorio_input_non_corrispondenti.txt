@@ -1,0 +1,6 @@
+module combinatorio_input (
+input a, b, c
+output x
+);
+assign x = (NOT a) XNOR (b AND d)
+endmodule

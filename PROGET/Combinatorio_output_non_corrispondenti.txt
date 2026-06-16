@@ -1,0 +1,6 @@
+module combinatorio_output (
+input a, b
+output x
+);
+assign y = a AND b
+endmodule

@@ -1,0 +1,6 @@
+module Combinatorio_per_composito (
+input a, b, c
+output x
+);
+assign x = (a AND b) OR c
+endmodule
