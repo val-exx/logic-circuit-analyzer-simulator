@@ -1,5 +1,7 @@
 # Logic Circuit Analyzer and Simulator
 
+[![Build and Run](https://github.com/val-exx/logic-circuit-analyzer-simulator/actions/workflows/build-and-run.yml/badge.svg)](https://github.com/val-exx/logic-circuit-analyzer-simulator/actions/workflows/build-and-run.yml)
+
 C++ project originally developed for an Algorithms and Computer Architecture course.
 
 The original assignment was not available in the project folder. The description below was reconstructed from the source code and the included example files.
@@ -139,6 +141,12 @@ OPERATOR;transition_0_to_1_consumption;transition_1_to_0_consumption
 ## How to Run
 
 The project was originally built as a Visual Studio console application.
+
+## Automated Build and Sample Runs
+
+The repository includes a GitHub Actions workflow that runs on Ubuntu. It compiles the project with `g++` and executes sample analysis and simulation runs using the included circuit files.
+
+The workflow can be found in `.github/workflows/build-and-run.yml`, and its output is visible in the repository's **Actions** tab.
 
 ### With Visual Studio
 

@@ -1,0 +1,41 @@
+name: Build and Run
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    name: Build and run examples on Ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++
+
+      - name: Build
+        run: |
+          g++ -std=c++11 LogicCircuitAnalyzerSimulator/*.cpp -o logic-circuit-analyzer-simulator
+
+      - name: Run combinational circuit analysis
+        working-directory: LogicCircuitAnalyzerSimulator
+        run: |
+          printf "2\n" | ../logic-circuit-analyzer-simulator Circuito_Combinatorio.txt
+
+      - name: Run combinational circuit simulation
+        working-directory: LogicCircuitAnalyzerSimulator
+        run: |
+          printf "1\ninput\nconsumo_potenza\n1\n" | ../logic-circuit-analyzer-simulator Circuito_Combinatorio.txt
+
+      - name: Run sequential circuit analysis
+        working-directory: LogicCircuitAnalyzerSimulator
+        run: |
+          printf "2\n" | ../logic-circuit-analyzer-simulator Circuito_Sequenziale.txt
