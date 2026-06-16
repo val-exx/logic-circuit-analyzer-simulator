@@ -2,7 +2,7 @@
 #include<string>
 #include<vector>
 #include<fstream>
-#include"Porta_Logica.h"
+#include"Porta_logica.h"
 #include"Circuito.h"
 #include "Controlli.h"
 using namespace std;
