@@ -57,6 +57,7 @@ This project highlights skills relevant to software engineering, embedded system
 - Separation of responsibilities across program components.
 - Handling of edge cases and error messages for invalid input.
 - Familiarity with Visual Studio and C++ console projects.
+- Basic continuous integration setup with GitHub Actions.
 
 ### Recruiter-Friendly Summary
 
@@ -144,9 +145,13 @@ The project was originally built as a Visual Studio console application.
 
 ## Automated Build and Sample Runs
 
-The repository includes a GitHub Actions workflow that runs on Ubuntu. It compiles the project with `g++` and executes sample analysis and simulation runs using the included circuit files.
+The original project was designed to be compiled locally with Visual Studio. As part of the repository cleanup and modernization, a GitHub Actions workflow was added to provide a basic **continuous integration (CI)** pipeline.
+
+The workflow runs on Ubuntu, compiles the project with `g++`, and executes sample analysis and simulation runs using the included circuit files. This makes the repository self-checking: every push to `main` verifies that the code still builds and that representative examples can run successfully.
 
 The workflow can be found in `.github/workflows/build-and-run.yml`, and its output is visible in the repository's **Actions** tab.
+
+This is CI rather than full CI/CD: the workflow builds and runs the project automatically, but it does not deploy or publish a release artifact.
 
 ### With Visual Studio
 
